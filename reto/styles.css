@@ -1,0 +1,205 @@
+/* Estilo General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7B5CA;
+    color: #333;
+}
+
+header {
+    background-color: #F7B5CA;
+    color: #333;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 40px;
+}
+
+header p {
+    margin: 30px;
+    position: absolute;
+    left: 55%;
+    transform: translateX(-90%);
+    font-size: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+    display: none; /* Ocultar menú por defecto */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2C2C2C; /* Fondo gris oscuro */
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 150px;
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+.menu li {
+    border-bottom: 1px solid #555; /* Borde gris más claro para separar elementos */
+}
+
+.menu li:last-child {
+    border-bottom: none; /* Quitar borde del último elemento */
+}
+
+.menu li a {
+    color: #FFFFFF; /* Texto blanco para contraste */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 16px; /* Ajusta el tamaño del texto */
+}
+
+.menu li a:hover {
+    background-color: white; /* Fondo más oscuro al pasar el mouse */
+    color: #f7cce6; /* Texto dorado como efecto de hover */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #FFFFFF; /* Color blanco para el botón de toggle */
+    cursor: pointer;
+}
+
+/* Mostrar menú cuando está activo */
+.menu.show {
+    display: block;
+}
+
+/* Contenedor del logo */
+.logo-container {
+   width: 100%; 
+   background-color: #FFF0F5;
+   padding: 30px;
+   text-align: center;
+   border-bottom: 5px solid rgb(249, 250, 243)
+
+}
+  
+  .logo {
+   max-width: 150px;
+   height: auto;
+   border-radius: 80%;
+  }
+
+/* Contenedor 'Quiénes somos' */
+.about-us {
+    width: 92%;
+    background-color: #FFF0F5; /* Rosa lavanda claro */
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+.about-us h2 {
+    color: #333; 
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    color: #555555;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px ;
+    background-color: #fa5f93;
+    color: white;
+}
+
+main {
+    margin: 10px;
+}
+
+/* Productos */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+}
+
+.product img {
+    width: 70%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #fa5f93 ;
+    color: #FFF0F5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #f7b7cc;
+}
+
+/* Carrito */
+#cart p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+/* Efecto de zoom en hover */
+.product img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.product:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+}
+
+

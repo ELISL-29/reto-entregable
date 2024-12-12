@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda maquillaje</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section id="inicio"> 
+        <header>
+        <h1>BEAUTY DAISYS3</h1>
+
+      <ul> 
+        <P>"Bienvenidos a mi pasión." </P>
+
+    </ul>
+    <!-- Contenedor del logo -->
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Logo de la página" class="logo">
+    </div>
+
+        <div class="logo">
+    
+        </div>
+        <nav>
+            <button class="menu-toggle" id="menu-toggle">☰</button>
+                <ul class="menu" id="menu">
+                  <li><a href="#inicio">Inicio</a></li>  
+                    <li><a href="#Quienes somos">Quienes somos</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                </ul>
+            
+            </nav>
+    </header>
+</section>
+<script src="./script.js"></script>
+
+<form> 
+    <!-- Contenedor de 'Quiénes somos' -->
+    <section id="Quienes somos">
+    <div class="about-us">
+        <h2>Quiénes Somos</h2>
+        <p>Somos un emprendimiento de belleza que busca brindarte la mejor experiencia en maquillaje y skincare.
+
+            Estoy comprometida con ofrecer productos de alta calidad que te hagan sentir única y especial.
+            
+            En Beauty Daisys3, encontrarás una variedad de productos de maquillaje y skincare innovadores y de alta calidad, diseñados para ayudarte a alcanzar tus objetivos de belleza.🩷</p>
+        </div>
+        </section>
+    
+</form>
+
+<main>
+    <section id="productos">
+    <div class="products">
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.05 AM (1).jpeg" alt="Producto 1">
+            <h2>bloom full cover blomshell</h2>
+            <p>Precio: $10.000</p>
+            <button onclick="addToCart('Producto 1', 10)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.05 AM.jpeg" alt="Producto 2">
+            <h2>Paleta de sombra miss elegance</h2>
+            <p>Precio: $20.000</p>
+            <button onclick="addToCart('Producto 2', 20)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.04 AM.jpeg" alt="Producto 3">
+            <h2>kit de brochas kabuki</h2>
+            <p>Precio: $35.000</p>
+            <button onclick="addToCart('Producto 3', 15)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.03 AM.jpeg" alt="Producto 4">
+            <h2>polvo de hadas s.f.r color</h2>
+            <p>Precio: $2500</p>
+            <button onclick="addToCart('Producto 4', 25)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.02 AM.jpeg" alt="Producto 4">
+            <h2>Duo de labiales corazon air pods</h2>
+            <p>Precio: $25.000</p>
+            <button onclick="addToCart('Producto 5', 25)">Comprar</button>
+        </div>
+        <div class="product">
+            <img src="./img/WhatsApp Image 2024-12-11 at 10.04.07 AM.jpeg" alt="Producto 4">
+            <h2>rubor liquido cojin kevin y coco</h2>
+            <p>Precio: $13.000</p>
+            <button onclick="addToCart('Producto 6', 25)">Comprar</button>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <a href="cart.html">Ver carrito</a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
